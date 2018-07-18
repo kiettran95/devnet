@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "author": "Kiet Tran",
+  "author": "Kiet Tran and An Tran",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
