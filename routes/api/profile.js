@@ -45,18 +45,16 @@ router.get(
 // @access  Public
 router.get("/all", (req, res) => {
   const errors = {};
-  Profile.find().populate(
-    "user",
-    ["name", "avatar"]
-      .then(profiles => {
-        if (!profiles) {
-          errors.norpofile = "There are no profiles";
-          return res.status(404).json(errors);
-        }
-        res.json(profiles);
-      })
-      .catch(err => res.status(404).json({ profile: "There are no profiles" }))
-  );
+  Profile.find()
+    .populate("user", ["name", "avatar"])
+    .then(profiles => {
+      if (!profiles) {
+        errors.norpofile = "There are no profiles";
+        return res.status(404).json(errors);
+      }
+      res.json(profiles);
+    })
+    .catch(err => res.status(404).json({ profile: "There are no profiles" }));
 });
 
 // @route   GET app/profile/handle/:handle
