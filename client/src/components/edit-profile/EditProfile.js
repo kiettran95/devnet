@@ -66,19 +66,19 @@ class CreateProfile extends Component {
 
       // Set component fields state
       this.setState({
-        handle: this.state.handle,
-        company: this.state.company,
-        website: this.state.website,
-        location: this.state.location,
-        status: this.state.status,
-        skills: this.state.skills,
-        githubusername: this.state.githubusername,
-        bio: this.state.bio,
-        twitter: this.state.twitter,
-        facebook: this.state.facebook,
-        linkedin: this.state.linkedin,
-        youtube: this.state.youtube,
-        instagram: this.state.instagram
+        handle: profile.handle,
+        company: profile.company,
+        website: profile.website,
+        location: profile.location,
+        status: profile.status,
+        skills: skillsCSV,
+        githubusername: profile.githubusername,
+        bio: profile.bio,
+        twitter: profile.twitter,
+        facebook: profile.facebook,
+        linkedin: profile.linkedin,
+        youtube: profile.youtube,
+        instagram: profile.instagram
       });
     }
   }
