@@ -13,12 +13,12 @@ const Profile = require("../../models/Profile");
 // Load User Model
 const User = require("../../models/User");
 
-// @route   GET app/profile/test
+// @route   GET api/profile/test
 // @desc    Tests post route
 // @access  Public
 router.get("/test", (req, res) => res.json({ msg: "Profile Works" }));
 
-// @route   GET app/profile/
+// @route   GET api/profile/
 // @desc    Get current users profile
 // @access  Private
 router.get(
@@ -40,7 +40,7 @@ router.get(
   }
 );
 
-// @route   GET app/profile/all
+// @route   GET api/profile/all
 // @desc    Get all profiles
 // @access  Public
 router.get("/all", (req, res) => {
@@ -57,7 +57,7 @@ router.get("/all", (req, res) => {
     .catch(err => res.status(404).json({ profile: "There are no profiles" }));
 });
 
-// @route   GET app/profile/handle/:handle
+// @route   GET api/profile/handle/:handle
 // @desc    Get profile by handle
 // @access  Public
 router.get("/handle/:handle", (req, res) => {
@@ -76,7 +76,7 @@ router.get("/handle/:handle", (req, res) => {
     .catch(err => res.status(404).json(err));
 });
 
-// @route   GET app/profile/user/:user_id
+// @route   GET api/profile/user/:user_id
 // @desc    Get profile by user ID
 // @access  Public
 router.get("/user/:user_id", (req, res) => {
@@ -97,7 +97,7 @@ router.get("/user/:user_id", (req, res) => {
     );
 });
 
-// @route   POST app/profile/
+// @route   POST l
 // @desc    Create or edit user profile
 // @access  Private
 router.post(
@@ -162,7 +162,7 @@ router.post(
   }
 );
 
-// @route   POST app/profile/experience
+// @route   POST api/profile/experience
 // @desc    Add experience to profile
 // @access  Private
 router.post(
@@ -196,7 +196,7 @@ router.post(
   }
 );
 
-// @route   POST app/profile/education
+// @route   POST api/profile/education
 // @desc    Add education to profile
 // @access  Private
 router.post(
@@ -230,7 +230,7 @@ router.post(
   }
 );
 
-// @route   DELETE app/profile/experience/:exp_id
+// @route   DELETE api/profile/experience/:exp_id
 // @desc    Delete experience from profile
 // @access  Private
 router.delete(
@@ -254,7 +254,7 @@ router.delete(
   }
 );
 
-// @route   DELETE app/profile/education/:edu_id
+// @route   DELETE api/profile/education/:edu_id
 // @desc    Delete education from profile
 // @access  Private
 router.delete(
@@ -278,7 +278,7 @@ router.delete(
   }
 );
 
-// @route   DELETE app/profile/
+// @route   DELETE api/profile/
 // @desc    Delete user and profile
 // @access  Private
 router.delete(
