@@ -16,7 +16,7 @@ class Navbar extends Component {
     const { isAuthenticated, user } = this.props.auth;
 
     const authLinks = (
-      <ul className="navbar-toggler ml-auto">
+      <ul className="navbar-nav ml-auto">
         <li className="nav-item ">
           <Link className="nav-link" to="/feed">
             Post Feed
