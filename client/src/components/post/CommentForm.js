@@ -47,7 +47,7 @@ class CommentForm extends Component {
 
     return (
       <div className="post-form mb-3">
-        <div className="card card-info">
+        <div className="card card-secondary">
           <div className="card-header bg-info text-white">
             Make a comment...
           </div>
@@ -85,4 +85,7 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { addComment })(CommentForm);
+export default connect(
+  mapStateToProps,
+  { addComment }
+)(CommentForm);

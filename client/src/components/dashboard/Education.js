@@ -25,7 +25,7 @@ class Education extends Component {
         <td>
           <button
             onClick={this.onDeleteClick.bind(this, edu._id)}
-            className="btn btn-danger"
+            className="btn btn-outline-danger"
           >
             Delete
           </button>

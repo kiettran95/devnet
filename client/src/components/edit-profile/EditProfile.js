@@ -274,7 +274,7 @@ class CreateProfile extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-secondary btn-block mt-4"
                 />
               </form>
             </div>
