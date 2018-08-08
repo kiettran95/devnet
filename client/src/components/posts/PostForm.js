@@ -46,7 +46,7 @@ class PostForm extends Component {
 
     return (
       <div className="post-form mb-3">
-        <div className="card card-info">
+        <div className="card card-secondary">
           <div className="card-header bg-secondary text-white">
             Say Somthing...
           </div>
